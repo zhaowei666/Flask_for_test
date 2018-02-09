@@ -29,9 +29,9 @@ def main():
         except:
             continue
         quotes.append({
-            'quote': quote,
-            'movie_name': movie_name,
-            'movie_year': movie_year
+            'text': quote,
+            'name': movie_name,
+            'year': movie_year
         })
     with open(data_address, 'w') as f:
         json.dump(quotes, f, indent=4)

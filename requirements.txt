@@ -16,6 +16,7 @@ guess-language==0.2
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0
+marshmallow==2.15.0
 pbr==3.1.1
 python-openid==2.2.5
 pytz==2017.3
@@ -24,6 +25,7 @@ SQLAlchemy==1.2.2
 sqlalchemy-migrate==0.11.0
 sqlparse==0.2.4
 Tempita==0.5.2
+webargs==1.9.0
 Werkzeug==0.14.1
 Whoosh==2.7.4
 WTForms==2.1
