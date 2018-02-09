@@ -25,10 +25,11 @@ with open(file_address, 'r') as f:
 @app.route('/quotes')
 @use_args(quotes_args)
 def get_quotes(args):
-    query = args['query']
+    query = args['query'].lower()
     quote_hits = []
     # TODO Spelling isoform finding is required
     for quote in quotes:
-        if query in quote['text']:
+        quote = quote
+        if query in quote['text'].lower():
             quote_hits.append(quote)
     return Response(json.dumps(quote_hits), status=200)
