@@ -16,4 +16,4 @@ A Flask backend project to provide RESTful API support for my website (http://ec
 ##### Install libraries
 `pip install -r requirements.txt`
 ##### Run
-`python run.py
+`python run.py`
