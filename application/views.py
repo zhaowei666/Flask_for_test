@@ -23,7 +23,7 @@ with open(file_address, 'r') as f:
     quotes = json.load(f)
 
 
-@app.route('/quotes')
+@app.route('/quotes', methods=['GET'])
 @use_args(quotes_args)
 def get_quotes(args):
     query = args['query'].lower().split(' ')
@@ -31,6 +31,7 @@ def get_quotes(args):
     quote_hits = []
     print query_words
     # TODO Spelling isoform finding is required
+    # TODO Hit ranking (TFIDF)
     for quote in quotes:
         quote_words = quote['text'].lower().split(' ')
         score = 0
